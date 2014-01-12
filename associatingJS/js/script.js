@@ -23,10 +23,10 @@ var num=2;
 
 console.log (muppetNames [num]);
 
-var a = 2;
+var a = 2; //sets up our variable a and defines it with 2
 var b; //sets up the variable and defines it as 2.
-a = a + 3 
-console.log(a);
+a = a + 3 //add 3 to a
+console.log(a); //print a
 
 var yearBorn = 1971;
 var age = 2014 - yearBorn -1;
@@ -38,6 +38,11 @@ var height = 4;
 var area =width * height/2;
 console.log(area);
 
+//Expressions -modulo operator
+
+//var remainder = 32 /10
+//console.log(remainder);
+//use % sign
 var remainder = 32 % 10;
 console.log(remainder);
 

@@ -29,6 +29,45 @@ var answer = String(phrase1) + " " + String(dogAge)  +" "+ String(phrase2) + " "
 
 console.log(answer);
 
+//Slice of Pie part I
+
+var SliceNumber = "8";
+var PeopleNumber = "9";
+var PizzaNumber = "3";
+var result = SliceNumber * PizzaNumber / PeopleNumber;
+var p1 = "Each person ate";
+var p2 = "slices of pizza at the party.";
+var sliceperguest = String(p1) + " " + String(result) + " " + String(p2);
+
+//Each person ate 2.66 slices of pizza at the party.
+
+console.log(sliceperguest); 
+
+//Slice of Pie II
+
+var SliceNumber = "8";
+var PeopleNumber = "10";
+var PizzaNumber = "4";
+var result = SliceNumber * PizzaNumber % PeopleNumber;
+var s1 = "Sparky got";
+var s2 = "slices of pizza.";
+var sparkyshare = String(s1) + " " + String(result) + " " + String(s2);
+
+console.log(sparkyshare);
+
+//Sharky got 2 slices of pizza.
+
+
+//Average shopping bill...array
+
+var groceryCost = [145, 150, 120, 168, 110]; //amount spent per week for five weeks on groceries. index 0-4
+
+var average = (groceryCost[0] + groceryCost[1] + groceryCost[2] + groceryCost[3] + groceryCost[4])/5;
+
+console.log(average);
+
+
+
 
 
 
