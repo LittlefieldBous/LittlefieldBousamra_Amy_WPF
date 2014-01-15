@@ -9,7 +9,7 @@
 
 //First find out from a paycheck how much you can save.
 
-var paycheck = prompt ("Hi I am the Miser!" + " " + "I've been created to help poor pauper's increase their measly savings account." + " " + "However, my calculations assume that you have a job and receive a biweekly paycheck." + " " + "That makes a total of twenty-six payments in a year.\n Welcome to week one!" + "First let's find out much you can save each paycheck?" + " " + "Please enter your paycheck amount.");
+var paycheck = prompt ("Hi I am the Miser!" + " " + "I've been created to help poor pauper's increase their measly savings account." + " " + "However, (although you are most likely a vagabond) my calculations assume that you have a job and receive a biweekly paycheck." + " " + "That makes a total of twenty-six payments in a year.\n Welcome to week one!"+ " "  + "First let's find out much you can save each paycheck?" + " " + "Please enter your paycheck amount.");
 var deductions = prompt("Please enter your biweekly deductions bills etc.");
 var biweeklySavings = paycheck - deductions; //calculates amount available to save from paycheck. 
 
