@@ -8,11 +8,11 @@
 //Calculating yardage for curtains
 
 
-var measureLength = prompt("Hello, I am the Interior decorator's calculator to measuring curtains." + " " + "Please note:" + " " + "This calculation is for curtains without a pattern." + " " + "First let's measure the length." + " " + "Using your measuring tape, begin at the top of the curtain rod and stop where you would prefer the length to be." + " " + "Record the number of inches here." + " " + "Please enter only the numerical value.");
+var measureLength = prompt("Hello, I am the Interior decorator's calculator." + " " + "I am here to help you measure curtains." + " " + "Please note:" + " " + "This calculation is for curtains without a pattern." + " " + "First let's measure the length." + " " + "Using your measuring tape, begin at the top of the curtain rod and stop where you would prefer the length to be." + " " + "Record the number of inches here." + " " + "Please enter the numerical value only.");
 
 var addedInches = prompt("Next add in additional inches you will need for the length of the curtain." + " " + "These additional inches accounts for the header allowance and hem." + " " +  "This typically ranges anywhere from 8 to 16 inches." + " " +  "If you are not certain 11 inches is a good standard." + " " + "Please enter the numberical value only." );
 
-var measureWidth = prompt("Next, measure the width." + " " + "Using your measuring tape begin from one end of the curtain rod to the other end." + " " + "You do not want to measure the window because curtains should extend beyond the window." + " " + "Record the number of inches here" + " " + "Please only put in the numerical value.");
+var measureWidth = prompt("Next, measure the width." + " " + "Using your measuring tape begin from one end of the curtain rod to the other end." + " " + "You do not want to measure the window because curtains should extend beyond the window." + " " + "Record the number of inches here." + " " + "Please enter the numerical value only.");
 
 var lengthInches = parseInt(measureLength);
 var extraInches = parseInt(addedInches);
@@ -49,6 +49,10 @@ console.log(finalWidth);
 var finalYards = finalWidth * finalLength;
 
 console.log(finalYards);
+
+var yardsum = " The final yards you need to order is" + " " + finalYards + " " + "yards." + " You should always round up when ordering yards of fabric for curtains." + " " + "For example if your answer is 4.20 you should round up and order 4 1/2 yards.";
+
+alert(yardsum);
 
 
 
