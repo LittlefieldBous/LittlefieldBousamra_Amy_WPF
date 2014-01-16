@@ -5,12 +5,12 @@
 //Expressions Wacky
 
 
-//The Chef's New Dish Name Calculator: naming a new dish based on prefixes and suffixes found in dishes.
+//The Chef's New Dish Casserole Name Calculator: naming a new dish based on prefixes and suffixes found in dishes.
 //found pasta endings listed in Wikapedia //Italian pasta suffixes are 0-27 Italian pasta prefixes 27-43
 
 //Array
 
-var dishNames = [ "ini", "elli", "telli", "delle", "icelli", "coti", "celloni", "illi" , "i", "etti",  "guine", "uccine", "ette", "ine", "elle", "izzoni", "loni", "zoni", "oni", "one", "otti", "ozzi", "acci", "iani", "strussel", "casserole", "pie", "ragout", "moussaka", "tada", "Ba", "Big", "Bucat", "Capp", "Fett", "Fus", "Fust", "Lin", "Macar", "Mani", "Pappar", "Pell", "Perciat", "Spaghett", "Taglia", "Verm", "Zit", "foo"]
+var dishNames = ["ini", "elli", "telli", "delle", "icelli", "coti", "celloni", "illi" , "i", "etti",  "guine", "uccine", "ette", "ine", "elle", "izzoni", "loni", "zoni", "oni", "one", "otti", "ozzi", "acci", "iani", "strussel", "casserole", "paella", "noodlepie", "ragout", "moussaka", "tada", "Ba", "Big", "Bucat", "Capp", "Fett", "Fus", "Fust", "Lin", "Macar", "Mani", "Masala", "Pappar", "Pell", "Perciat", "Spaghett", "Taglia", "Verm", "Zit", "foo"];
 
 
 var namegenerator = dishNames[44] + dishNames[2];
