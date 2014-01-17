@@ -54,7 +54,7 @@ var weekB = prompt("Please enter the amount you would like to save for week two.
 
 var moneyB = parseInt(weekB);
 
-var total = moneyA + moneyB; //calculates the total amount in savings from week one and week two ...but isn't calculating..it only calculates with a * - or / but not with a +
+var total = moneyA + moneyB; //calculates the total amount in savings from week one and week two.
 
 console.log(total);
 
