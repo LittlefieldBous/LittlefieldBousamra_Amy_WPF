@@ -27,7 +27,6 @@ console.log(namegeneratorD);
 
 var chefHelper = "Have you ever tried," + " " + namegeneratorB + "?" + " " +  "or a bowl of delcious" + " " + namegeneratorA + "?" + " " + "Or maybe some"+ " " + namegeneratorC + "?" + " " + "The Chef helper will aid you in creating just the right name for your new delectable dish!" + " " + "Soon you'll hear your dinner guests remark that" + " " + namegeneratorD + " " + "is excellent!";
 
-console.log(chefHelper);
 alert(chefHelper);
 
 var prefix = prompt ("Please enter a prefix for your dish here");
@@ -38,7 +37,7 @@ var dishA = "Would you like to have some," + " " + nameA + "?";
 alert(dishA);
 
 var suffix = prompt ("Please enter a suffix for your dish here");
-var nameB =  dishNames[42] + suffix;
+var nameB =  dishNames[37] + suffix;
 console.log(nameB);
 
 var dishB = "Or perhaps you would like to try some," + " " + nameB + "?";
