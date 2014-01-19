@@ -221,6 +221,71 @@ if(kidHeight > minHeight){
 //notice order if, else if, else...once true it will skip the rest!
 
 
+//Logical Operators
+
+//They compare two True or False values
+//they compare pairs of relational expressions
+//the comparison results in true or false
+//only between comparisons or boolean variables
+
+
+// And  &&
+// Or ||
+// Exclusive or (XOR) ^
+// Not !
+
+
+//And &&
+
+// Requires both in the pair be true
+//for the whole pair to be true
+
+//True Table for &&
+
+//True && True //this is True
+//True && False //this is false
+//false && True //this is false
+//false && False // this is false 
+
+//Example: we want to buy the latest iphone but only can if we have the budget for it
+
+var budget = 300;
+var iPhonePrice = 199.99;
+var paycheck = 200;
+//if the price of the phone is less than our budget And if our paycheck is over 300
+if(iPhonePrice < budget){
+	console.log("We can buy the phone!");
+}else{
+	console.log("No phone for you!");
+}
+if(paycheck > 300){
+	console.log("This decision is too many times in this example!");
+}
+	
+//puts out two decisions but we need the console to just put out one decision so we need //to put and &&
+
+var budget = 300;
+var iPhonePrice = 199.99;
+var paycheck = 300;
+//if the price of the phone is less than our budget And if our paycheck is over 300
+if(iPhonePrice < budget && paycheck > 300){ //&& operator used for going in between operations //this expression requires that both are true the iphone is less than the budget and the paycheck is greater than 300...because the paycheck in this scenario is not greater than 300 the second console.log appears.
+	console.log("Yay! We can buy the phone!");
+}else{
+	console.log("Sorry, No phone for you!"); //2nd console log statement
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
