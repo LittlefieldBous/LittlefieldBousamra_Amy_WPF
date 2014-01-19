@@ -268,24 +268,113 @@ var budget = 300;
 var iPhonePrice = 199.99;
 var paycheck = 300;
 //if the price of the phone is less than our budget And if our paycheck is over 300
-if(iPhonePrice < budget && paycheck > 300){ //&& operator used for going in between operations //this expression requires that both are true the iphone is less than the budget and the paycheck is greater than 300...because the paycheck in this scenario is not greater than 300 the second console.log appears.
+if(iPhonePrice < budget && paycheck > 300){ //&& operator used for going in between values..must have a value on both right and left side to use the &&.. //this expression requires that both are true the iphone is less than the budget and the paycheck is greater than 300...because the paycheck in this scenario is not greater than 300 the second console.log appears.
 	console.log("Yay! We can buy the phone!");
 }else{
 	console.log("Sorry, No phone for you!"); //2nd console log statement
 }
 
 
+//OR Operator || 
+
+//Truth Table 
+// True || True Outcome: True
+// True || False Outcome: True
+//False || True Outcome: True
+//False || False Outcome: False
 
 
+var budget = 100;
+var iPhonePrice = 199.99;
+var wonLottery = true;
+
+if(iPhonePrice < budget || wonLottery === true){ //only needs one in the expression to be true
+	console.log("Yay! We can buy the phone!");
+}else{
+	console.log("Sorry, No phone for you!"); //2nd console log statement
+}
+
+//Not Operator This is used to flip the meaning of the object also called negation.
+// !
+//Flips a value
+//True becomes False 
+//False becomes True
+//is not used for comparison
+//if more than one are true, the result is False.
 
 
+//not operator negates
+//Turns true to false and vice versa
+// a!=b is the same as ! (a===b) // a is not equal to b..both these expressions
+//say the same thing
+//a<b the same as ! (a<b) example a is less than b or a is not less than be
 
 
+//Common Misconceptions
+
+//three objects to compare a,b,c
+
+//a === b === c //this is the wrong way
+//a===b && b===c //this is the correct way to write it
+
+//relational operators go in between pairs of objects.
+//logical operators go in between relational expressions or boolean values.
+//Always work in pairs
+
+//Conditional logic - Ternary Operators short way to write an if else statement...it's decision making on one line
+
+//if(condition){
+//	action if true;
+//}else{
+//	action if false;
+//}
 
 
+//(condition)? do if true : do if false; //short-cut
 
 
+//var gpa = 48; 
 
+//if the gpa is over the min 2.0 score, the student can graduate
+/*if( gpa > 2.0) {
+
+	console.log("You can graduate!");
+}else{
+console.log("GPA is too low!");
+}*/
+
+//ternary form
+//(gpa > 2.0) ? console.log("You can graduate"): console.log("GPA too low!");
+
+//(condition) ? what happens if it's true console.log("You can graduate")
+// : then what happens if it's false console.log("GPA too low!");
+
+//another example
+
+var age = 5;
+var book;
+
+//If the child is under 10, they get Green Eggs and Ham, otherwise they get the Time Machine
+
+if(age<10){
+	book = "Green Eggs and Ham";
+}else{
+	book = "The Time Machine";
+}
+console.log(book);
+
+
+//my daughters example
+
+var age = 5;
+var cookies;
+
+if(age > 4){
+  cookies = "The cookie monster say, You get four cookies";
+  }else{
+  cookies = "The cookie monster say, You only get two cookies";
+  }
+  console.log(cookies);
 
 
 
