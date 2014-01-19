@@ -349,7 +349,7 @@ console.log("GPA is too low!");
 //(condition) ? what happens if it's true console.log("You can graduate")
 // : then what happens if it's false console.log("GPA too low!");
 
-//another example
+//another example //can use both types of expressions
 
 var age = 5;
 var book;
@@ -364,17 +364,48 @@ if(age<10){
 console.log(book);
 
 
-//my daughters example
+//now do with a ternary expression instead
 
-var age = 5;
-var cookies;
+var age = 11;
+var book;
 
-if(age > 4){
-  cookies = "The cookie monster say, You get four cookies";
-  }else{
-  cookies = "The cookie monster say, You only get two cookies";
-  }
-  console.log(cookies);
+book = (age < 10) ? "Green Eggs and Ham" : "The Time Machine";
+console.log(book);
+
+
+//Decisions, loops & functions
+
+//Comparisons
+//is a bigger than b
+//this asks if it is true or false and then stores the information//parseInt is used to convert the string "age" to a number age.
+
+var age = prompt("Enter age:", "");
+var isOversixty = parseInt(age) > 60
+console.log("Older than 60: "  + isOversixty);
+
+// if the room is more than 80 degrees turn the air conditioner on
+var roomTemp = prompt("Enter Room temperature");
+var currentTemp = parseInt(roomTemp);
+if (currentTemp > 80){
+  currentTemp = currentTemp - 10;
+alert("It's getting hot in here");
+alert("Air conditioning switched on");
+}
+console.log(currentTemp);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
