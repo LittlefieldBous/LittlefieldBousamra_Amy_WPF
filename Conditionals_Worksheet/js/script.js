@@ -2,19 +2,13 @@
 //Amy littlefield-Bousamra
 //1-19'2014
 
+
+//1.
 /*Convert a temperature to either degrees Celsius or degrees Fahrenheit depending on what the user has entered. If the user puts a “C” for the unit, the calculator should convert to Celsius. If the user puts “F” for the unit, the calculator should convert to Fahrenheit.*/
-    
-/*Given:
-Degrees (in F or C)
-Unit (a string holding an “F” or a “C”)
-Result:
-Data Sets to Test: (Note that data sets are not the only numbers that should work with your code.)
-
-
+//Tests   
 /*32F is 0C
 100C is 212F
 90F is 32.22C*/
-
 
 //An example:
 //Convert 37°C to Fahrenheit.
@@ -23,10 +17,8 @@ Data Sets to Test: (Note that data sets are not the only numbers that should wor
 //Convert 98.6°F to Celsius.
 //(98.6°F  -  32)  x  5/9 = 37°C
 
-
-
-var fahren = "F";
-var cels = "C";
+var fahren = "F"; //unit holding F
+var cels = "C"; //unit holding C
 
 
 var degreeM = prompt("Do you want to convert your temperature to Celsius or Fahrenheit?" + " " + "Please enter" + " " + "C" + " " + "for Celsius and" + " " + "F" + " " +  "for Fahrenheit.");
@@ -58,45 +50,19 @@ else
 	alert("The temperature is" + " " + degreeC + " " + "degrees Celsius.");
 }
 
-
-  
 //“The temperature is X degrees Celsius.” Or “The temperature is X degrees Fahrenheit.”
 
 //note: not sure where that additional number on my console is coming from?
 
+//2.
+      
+var correctName = prompt("Please choose a username");
+var correctPass = prompt("Please choose a password");       
 
-
-
-//Hot Enough?
-//Is it hot enough to go to the beach?
-//var temp = 80;
-//if the temperature is less than 75..
-
-//if(temp < 75){
-     //if its less than 75
-    // console.log(“We will go to the beach!”);
-//}else{
-     //if it’s greater or equal to 75
-     //console.log(“We will go to the movies.”);
-//}
-
-
-/*Check the Login
-
-Make sure the user has the correct username and password. If the username doesn’t match then a specific message for that should be printed to the console. If the password doesn’t match a message should appear for that, etc. Only one error message should appear.
-
-    Given:
-        Username entered by user
-        Password entered by user
-        Correct username
-        Correct password
-    Result To Print Out:
-        “Welcome, (place their username here)!”  - if the username and password is correct
-        “User not found. Try again.” -if the username does not match
-        “Password does not match our records.”  -if the username matches but the password does not*/
-
-var userName = "Joe1977"; //username entered by user
-var password = "Mybigtoe"; //password entered by user
+var userName = correctName; //username entered by user
+var password = correctPass; //password entered by user
+var greeting = "Thank you for your membership!"+ " " + "Click enter to proceed to login.";
+alert(greeting);
 
 var enterName = prompt("Enter your username here.");
 var enterPass = prompt("Enter your password here");
@@ -111,6 +77,31 @@ if (enterName != userName){
 
 if(enterPass != password){
 	console.log("Password does not match our records.")
+}
+
+
+//3.
+//multiple conditions
+
+/*The local movie theater in town has a ticket price of $12.00 but if you are a senior (55 and older), under 10 you get the discounted price of $7.00. In addition, if a customer is seeing a movie between 3pm and 5pm they can also get the discounted price.
+Determine which of the two prices the customer is eligible for.
+
+    Given:
+        Time of Movie (Assume whole numbers here)
+        Age of the customer
+     Result To Print Out:
+        “The ticket price is X”*/
+
+
+//Movie Ticket Price
+
+var movieTime = 7;
+var custAge = 13
+
+if(custAge > 54 || custAge < 10 || movieTime >2 && movieTime <= 5){ //ticket price is $7 if customer is 55 and older or under 10 years old
+	console.log("The ticket price is $7.00.");
+}else {
+	console.log("The ticket price is $12.00.");
 }
 
 
