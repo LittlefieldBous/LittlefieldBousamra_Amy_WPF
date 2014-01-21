@@ -5,7 +5,9 @@
 //Conditionals Personal
 
 
+//farming
 
+//using soil thermometers to determine when to plant. 
 
 
 
