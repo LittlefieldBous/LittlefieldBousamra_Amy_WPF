@@ -72,12 +72,34 @@ else {
  
 }
 
- var totalO = (monthlyO + initCostO);
-    alert("The monthly cost of the office space is" + "$" + monthlyO + "." + " " + "The initial start up office cost is" + "$" + initCostO + "." + " " + "The total office cost is" + "$" + totalO + ".");
+  var totalO = (monthlyO + initCostO);
+  alert("The monthly cost of the office space is" + "$" + monthlyO + "." + " " + "The initial start up office cost is" + "$" + initCostO + "." + " " + "The total office cost is" + "$" + totalO + ".");
       console.log(totalO);
 	
 
+var adCostP= prompt("How much money do you plan to spend on marketing and advertising?" + " " + "Enter your initial cost for marketing." + " " + "Please enter the numerical cost only.");
 
+var adCost = parseInt(adCostP);
+alert("The initial cost of marketing is" + "$" + adCost + ".");
+ console.log(adCost);
+	
+   var adsMonthP = prompt("Will you have a monthly advertising cost?" + " "
+ + "Please enter" + " " + "Y" + " " + "for Yes or" + " " + "N" + " " + "for No.");
+ console.log(adsMonthP);
+ 
+   if (adsMonthP === "Y"){
+    var adMonth = prompt("Please enter the monthly cost of advertising.");
+    var adMonthC = parseInt(adMonth);
+    alert("The monthly cost of advertising is" + "$" + adMonthC + ".");
+      console.log(adMonthC);
+}	
+        
+    else {
+   var adMonthC= 0; 
+   console.log(adMonthC);
+	
+}
+        
 
 
 
