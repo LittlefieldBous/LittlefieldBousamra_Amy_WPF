@@ -96,7 +96,7 @@ alert("The initial cost of marketing is" + "$" + adCost + ".");
  console.log(adsMonthP);
  
    if (adsMonthP === "Y"){
-    var adMonth = prompt("Please enter the monthly cost of advertising.");
+    var adMonth = prompt("Please enter the monthly cost of advertising." + " " + "Please enter the numerical cost only.");
     var adMonthC = parseInt(adMonth);
     alert("The monthly cost of advertising is" + "$" + adMonthC + ".");
       console.log(adMonthC);
@@ -108,13 +108,22 @@ alert("The initial cost of marketing is" + "$" + adCost + ".");
 	
 }
         
-var phoneP = prompt("Enter your monthly phone costs")
+var phoneP = prompt("Enter your monthly phone costs." + " " + "Please enter the numerical cost only.")
 var phoneCost = parseInt(phoneP);
 alert("Your monthly phone cost is" + "$" + phoneCost+ ".");
  console.log(phoneCost);
 
 
+var domainP = prompt("Enter your yearly cost for a domain name."+ " " + "Please enter the numerical cost only.")
+var domainCost = parseInt(domainP);
+alert("Your yearly domain name cost is" + "$" + domainCost + ".");
+ console.log(domainCost);
 
+
+var hostP = prompt("Enter your monthly cost for web hosting."+ " " + "Please enter the numerical cost only.")
+var hostCost = parseInt(hostP);
+alert("Your yearly domain name cost is" + "$" + hostCost + ".");
+ console.log(hostCost);
 
 
 
