@@ -47,6 +47,37 @@ else {
 }
 
 
+var introO = prompt("Will you need office Space?" + " " + "Please enter" + " " + "Y" + " " + "for Yes or" + " " + "N" + " " + "for No.");
+ console.log(introO);
+ 
+ 
+ if (introO === "Y"){
+    var officeP = prompt("Enter your monthly cost for rent." + " " + "Please enter the numerical cost only.");
+    var monthlyO = parseInt(officeP);
+    console.log(monthlyO);
+ }
+ 
+ if (introO === "Y"){
+ var officeI = prompt("Enter downpayment or other initial costs for the office   space here." + " " + "Please enter the numerical cost only.");
+ var initCostO = parseInt(officeI);
+  console.log(initCostO);
+  } 
+    
+          
+else {
+   var monthlyO = 0;
+   var initCostO = 0;
+   console.log(monthlyO);
+   console.log(initCostO);
+ 
+}
+
+ var totalO = (monthlyO + initCostO);
+    alert("The monthly cost of the office space is" + "$" + monthlyO + "." + " " + "The initial start up office cost is" + "$" + initCostO + "." + " " + "The total office cost is" + "$" + totalO + ".");
+      console.log(totalO);
+	
+
+
 
 
 
