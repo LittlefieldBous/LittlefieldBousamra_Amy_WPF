@@ -12,7 +12,7 @@
 var yes = "Y";
 var no = "N";
 
-//New software Cost if needed
+//1. New software Cost if needed
 
 var introP = prompt("Hello, I'm start-up Sal!" + " " + "I am here to help calculate start-up costs for a web design business." + " " + " " + "Will you need to purchase new software?" + " "
  + "Please enter" + " " + "Y" + " " + "for Yes or" + " " + "N" + " " + "for No.");
@@ -31,7 +31,7 @@ else {
 	
 }
 
-//monthly health insurance cost if needed
+//2. monthly health insurance cost if needed
 
 var introH = prompt("Will you need health insurance?" + " " + "Please enter" + " " + "Y" + " " + "for Yes or" + " " + "N" + " " + "for No.");
  console.log(introH);
@@ -49,7 +49,7 @@ else {
 	
 }
 
-//monthly business insurance cost if needed
+//3. monthly business insurance cost if needed
 
 
 var busInsP = prompt("Will you need business insurance?  Liability Insurance etc.?" + " " + " " + "Y" + " " + "for Yes or" + " " + "N" + " " + "for No.");
@@ -68,7 +68,7 @@ else {
 	
 }
 
-//Costs of office space if needed. Rent and bills
+//4.Costs of office space if needed. Rent and bills
 
 var introO = prompt("Will you need office Space?" + " " + "Please enter" + " " + "Y" + " " + "for Yes or" + " " + "N" + " " + "for No.");
  console.log(introO);
@@ -114,7 +114,7 @@ else {
       console.log(totalO);
       
       
-//Advertising/marketing costs
+//5. Advertising/marketing costs
 	
 //initial marketing costs
 
@@ -142,21 +142,21 @@ alert("The initial cost of marketing is" + "$" + adCost + ".");
 	
 }
 
-//monthly phone cost
+//6. monthly phone cost
         
 var phoneP = prompt("Enter your monthly phone costs." + " " + "Please enter the numerical cost only.")
 var phoneCost = parseInt(phoneP);
 alert("Your monthly phone cost is" + "$" + phoneCost+ ".");
  console.log(phoneCost);
 
-//yearly cost of domain name
+//7. yearly cost of domain name
 
 var domainP = prompt("Enter your yearly cost for a domain name."+ " " + "Please enter the numerical cost only.")
 var domainCost = parseInt(domainP);
 alert("Your yearly domain name cost is" + "$" + domainCost + ".");
  console.log(domainCost);
 
-//monthly  cost of web hosting
+//8. monthly cost of web hosting
 
 var hostP = prompt("Enter your monthly cost for web hosting."+ " " + "Please enter the numerical cost only.")
 var hostCost = parseInt(hostP);
@@ -168,6 +168,15 @@ alert("Your yearly domain name cost is" + "$" + hostCost + ".");
  
   alert("The projected monthly cost of your business is" + " " + monthlyCosts + ".");
   console.log(monthlyCosts);
+  
+  var initialCosts = domainCost + softwareCost + initCostO + adCost;
+  console.log(initialCosts);
+  
+  var totalCosts = initialCosts + monthlyCosts;
+  
+  alert("The other initial costs total:" + " " + "(" + "$" + initialCosts + ")" + "along with the monthly costs which total:" + " " + "(" + "$"+ monthlyCosts + ")" + "." + " " + "This makes the total start-up costs equal:" + "$" + totalCosts + ".");
+  
+  console.log(totalCosts);
 
 
 
