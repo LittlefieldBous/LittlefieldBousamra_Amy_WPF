@@ -1,5 +1,17 @@
 /* CSS */
 
 body{
-    background-color: #FFDB94;
+    background-color: #000000;
+}
+
+h1 {
+font-family: 'Verdana', sans-serif;
+font-weight:bold;
+color: #FFFFFF;
+font-size: 4em; 
+margin: 0 auto;
+text-align: center;
+padding-top: 2.22222222%; /*20px/900*/
+padding-bottom: .55555556%; /*5px/900*/
+
 }
