@@ -38,30 +38,30 @@ alert("Your soil is alkaline." + " " + "Not many berries grow in this soil's PH 
  
  }else	
 
- if (soilPH >= 6.5 && soilPH <= 6.9){ //not-working
+ if (soilPH >= 6.5 && soilPH <= 6.9){ //This one is not-working instead of the neutral alert it goes to the next one, slightly acidic.
  
- alert("Your soil is in the neutral PH range." + " " + "Berries that can grow in this soil PH include:" + " " + "saskatoon berries, currents, gooseberries, coffeeberries, black chokeberry, wolfberries, pineberries, crowberries and salmonberries.");
+ alert("Your soil is in the neutral PH range." + " " + "Berries that can grow in this soil PH include:" + " " + "saskatoon berries, currants, gooseberries, coffeeberries, black chokeberry, wolfberries, pineberries, crowberries and salmonberries.");
 
   
- console.log("Your soil is in the neutral PH range." + " " + "Berries that can grow in this soil PH include:" + " " + "saskatoon berries, currents, gooseberries, coffeeberries, black chokeberry, wolfberries, pineberries, crowberries and salmonberries.");
+ console.log("Your soil is in the neutral PH range." + " " + "Berries that can grow in this soil PH include:" + " " + "saskatoon berries, currants, gooseberries, coffeeberries, black chokeberry, wolfberries, pineberries, crowberries and salmonberries.");
 
         	
  }else
  
 if (soilPH >= 6.0  && soilPH <= 6.4){
 
-alert("Your soil is considered slightly acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, black chokeberry currents, jostaberries, gooseberries, elderberries, crowberries strawberries, blackberries, and raspberries.");
+alert("Your soil is considered slightly acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, black chokeberry, currants, jostaberries, gooseberries, elderberries, crowberries strawberries, blackberries, and raspberries.");
 
-  console.log("Your soil is considered slightly acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, black chokeberry currents, jostaberries, gooseberries, elderberries, crowberries strawberries, blackberries, and raspberries.");
+  console.log("Your soil is considered slightly acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, black chokeberry, currants, jostaberries, gooseberries, elderberries, crowberries strawberries, blackberries, and raspberries.");
 
 
 }else 
 
 if(soilPH >= 5.5 && soilPH <= 5.9) { //this one doesn't work it goes to very acidic instead of acidic
 
-alert("Your soil is acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, currents, jostaberries, elderberries, gooseberries, strawberries, crowberries,blackberries, and raspberries.");
+alert("Your soil is acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, currants, jostaberries, elderberries, gooseberries, strawberries, crowberries,blackberries, and raspberries.");
  
- console.log("Your soil is acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, currents, jostaberries, elderberries, gooseberries, strawberries, crowberries,blackberries, and raspberries.");
+ console.log("Your soil is acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, currants, jostaberries, elderberries, gooseberries, strawberries, crowberries,blackberries, and raspberries.");
 
 }else 
 

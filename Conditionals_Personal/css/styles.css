@@ -1,5 +1,11 @@
 /* CSS */
 
 body{
-    background-color: #C299C2;
+    background-color: #338533;
+}
+
+#chart {
+width: 60.45751634%; /*555/918 w555-h395*/
+float: right;
+margin-left: 1.08932462%; /*10px/918*/ 
 }
