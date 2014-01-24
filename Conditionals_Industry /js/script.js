@@ -20,7 +20,7 @@ var introP = prompt("Hello, I'm start-up Sal!" + " " + "I am here to help calcul
  
 if (introP === "Y"){
     var softwareP = prompt("Please enter the cost of any new software purchased.");
-    var softwareCost = parseInt(softwareP);
+    var softwareCost = parseInt(softwareP);//changes string to a number
     alert("The cost of software is" + " " + "$" + softwareCost + ".");
       console.log(softwareCost);
 }	
@@ -163,16 +163,16 @@ var hostCost = parseInt(hostP);
 alert("Your yearly domain name cost is" + " " + "$" + hostCost + ".");
  console.log(hostCost);
 
- var monthlyCosts = hostCost + phoneCost + adMonthC + monthlyO + billsO + healthIns + InsCost;
+ var monthlyCosts = hostCost + phoneCost + adMonthC + monthlyO + billsO + healthIns + InsCost; //monthly costs
  
  
   alert("The projected monthly cost of your business is" + " " + "$" + monthlyCosts + ".");
   console.log(monthlyCosts);
   
-  var initialCosts = domainCost + softwareCost + initCostO + adCost;
+  var initialCosts = domainCost + softwareCost + initCostO + adCost; //initial costs only
   console.log(initialCosts);
   
-  var totalCosts = initialCosts + monthlyCosts;
+  var totalCosts = initialCosts + monthlyCosts; //total costs
   
   alert("The other initial costs total:" + " " + "(" + "$" + initialCosts + ")" + " " + "along with the monthly costs which total:" + " " + "(" + "$"+ monthlyCosts + ")" + "." + " " + "This makes the total start-up costs:" + "$" + totalCosts + ".");
   
