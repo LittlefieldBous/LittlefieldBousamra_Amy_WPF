@@ -10,29 +10,32 @@
 
 //The cyber 8 ball...
 
+//a ternary expression
 
+var fortune;
 var NumberA = prompt("Welcome to the pyschic cyber 8 ball!" + " " + "Simply ask your computer a yes or no question and put in the first number" + "(" + "1-10" + ")" + " " + "that pops in your head!"); //person enters the number
 
 var NumberC = parseInt(NumberA);//string changes to a number
  
-if ((NumberC >= 1 && NumberC <=3) || ( NumberC >= 7 && NumberC <=8) ) { //if the number is greater than or equal to 1 and the number is less than or equal to 3...OR the number is greater than or equal to 7 and the number is less than 8..signs will point to yes.
+fortune = (NumberC >= 1 && NumberC <=6) || ( NumberC >= 7 && NumberC <=10) ? "Signs point to Yes!" : "Outlook Hazy, Try Again!";
 
-console.log("Signs point to Yes!");
-alert("Signs point to Yes!");
 
-}
+alert(fortune);
 
-else if (NumberC >= 4 && NumberC <=6){ //if the number is greater than or less than 4 and the number is less than or equal to six the prompt will say dont count on it!
+console.log(fortune);
 
-console.log("Don't count on it!");
-alert("Don't count on it!");
+//if the number is greater than or equal to 1 and the number is less than or equal to 3...OR the number is greater than or equal to 7 and the number is less than 8..signs will point to yes.
 
-}else{ //false any other number such as 9 or 10 the prompt will say concentrate harder.
+var NumberB = prompt("Want to try the pyschic cyber 8 ball again?" + " " + "Simply ask your computer a yes or no question and put in the first number" + "(" + "1-10" + ")" + " " + "that pops in your head!"); //person enters the number
+var NumberD = parseInt(NumberB);//string changes to a number
 
-console.log("Concentrate and ask again!");
-alert("Concentrate and ask again!");
 
-}
+fortune = (NumberD >= 1 && NumberD <=7) || (NumberD >8) ? "Don't count on it!": "Outlook Good!"; //if the number is greater than or less than 4 and the number is less than or equal to six the prompt will say dont count on it!
+
+console.log(fortune);
+alert(fortune);
+
+//false any other number such as 9 or 10 the prompt will say concentrate harder.
 
 
 var zelda = "Z"; //Z for Zelda

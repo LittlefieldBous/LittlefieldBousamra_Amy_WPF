@@ -20,10 +20,6 @@ var acid = >= 5.5 <= 5.9;
 var veryAcid = >=5.0 <= 5.4;
 var extremeAcid = >=4.0 <= 4.9;*/
 
-//if (val < 1000) { /*do something */ } else
-//if (val < 2000) { /*do something */ } else
-
-//if (val < 30000) { /*do something */ } else
 
 var FindPH = prompt("Please enter your soil's PH."); //person enters there soils ph
 
