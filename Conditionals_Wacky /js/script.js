@@ -24,18 +24,13 @@ alert(fortune);
 
 console.log(fortune);
 
-//if the number is greater than or equal to 1 and the number is less than or equal to 3...OR the number is greater than or equal to 7 and the number is less than 8..signs will point to yes.
 
 var NumberB = prompt("Want to try the pyschic cyber 8 ball again?" + " " + "Simply ask your computer a yes or no question and put in the first number" + "(" + "1-10" + ")" + " " + "that pops in your head!"); //person enters the number
 var NumberD = parseInt(NumberB);//string changes to a number
 
 
-fortune = (NumberD >= 1 && NumberD <=7) || (NumberD >8) ? "Don't count on it!": "Outlook Good!"; //if the number is greater than or less than 4 and the number is less than or equal to six the prompt will say dont count on it!
-
-console.log(fortune);
-alert(fortune);
-
-//false any other number such as 9 or 10 the prompt will say concentrate harder.
+fortune = (NumberD >= 1 && NumberD <=7) || (NumberD >8) ? "Don't count on it!": "Outlook Good!"; console.log(fortune);
+alert(fortune); //greater than or equal to 1, less than 7 = don't count on it. greater than 8 = outlook good
 
 
 var zelda = "Z"; //Z for Zelda
