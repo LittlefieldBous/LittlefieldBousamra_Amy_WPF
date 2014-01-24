@@ -36,75 +36,69 @@ alert("Your soil is alkaline." + " " + "Not many berries grow in this soil's PH 
 
  console.log("Your soil is alkaline." + " " + "Not many berries grow in this soil's PH but saskatoon berries and salmonberries can grow in this soil"); 
  
- }else	
-
- if (soilPH >= 6.5 && soilPH <= 6.9){ //This one is not-working instead of the neutral alert it goes to the next one, slightly acidic.
+   }else if (soilPH >= 6.5 && soilPH <= 6.9){ //This one is not-working instead of the neutral alert it goes to the next one, slightly acidic.
  
  alert("Your soil is in the neutral PH range." + " " + "Berries that can grow in this soil PH include:" + " " + "saskatoon berries, currants, gooseberries, coffeeberries, black chokeberry, wolfberries, pineberries, crowberries and salmonberries.");
 
   
  console.log("Your soil is in the neutral PH range." + " " + "Berries that can grow in this soil PH include:" + " " + "saskatoon berries, currants, gooseberries, coffeeberries, black chokeberry, wolfberries, pineberries, crowberries and salmonberries.");
-
-        	
- }else
  
-if (soilPH >= 6.0  && soilPH <= 6.4){
+ }else if (soilPH >= 6.0  && soilPH <= 6.4){
 
 alert("Your soil is considered slightly acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, black chokeberry, currants, jostaberries, gooseberries, elderberries, crowberries strawberries, blackberries, and raspberries.");
 
   console.log("Your soil is considered slightly acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, black chokeberry, currants, jostaberries, gooseberries, elderberries, crowberries strawberries, blackberries, and raspberries.");
 
+ }else if(soilPH >= 5.5 && soilPH <= 5.9) { //this one doesn't work it goes to very acidic instead of acidic
 
-}else 
-
-if(soilPH >= 5.5 && soilPH <= 5.9) { //this one doesn't work it goes to very acidic instead of acidic
-
-alert("Your soil is acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, currants, jostaberries, elderberries, gooseberries, strawberries, crowberries,blackberries, and raspberries.");
+alert("Your soil is acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, currants, jostaberries, elderberries, gooseberries, strawberries, crowberries, blackberries, and raspberries.");
  
  console.log("Your soil is acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +  "saskatoon berries, salmonberries, pineberries, currants, jostaberries, elderberries, gooseberries, strawberries, crowberries,blackberries, and raspberries.");
 
-}else 
-
-if(soilPH >= 4.5 && soilPH <= 5.4) {  //this one doesnt work it goes to extremely acidic when its supposed to be very acidic
+ }else if(soilPH >= 4.5 && soilPH <= 5.4) {  //this one doesnt work it goes to extremely acidic when its supposed to be very acidic
 
  alert("Your soil is very acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +   " northern blueberries, crowberries, cranberries, huckleberries.");
 
 console.log ("Your soil is very acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +   "northern blueberries, crowberries, cranberries, huckleberries.");
 
-}else 
-
-if(soilPH >= 4.0 && soilPH <= 4.4) { 
+ }else if(soilPH >= 4.0 && soilPH <= 4.4) { 
 
      alert("Your soil is extremely acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +   "northern blueberries and crowberries");
      
     console.log("Your soil is extremely acidic." + " " + "Berries that can grow in this soil's PH include:" + " " +   "northern blueberries and crowberries");
-        
-}else 
-
-if (soilPH >= 1.0 && soilPH <= 3.9 || soilPH >= 8.0 && soilPH <= 10.0){
+    
+ }else if (soilPH >= 1.0 && soilPH <= 3.9 || soilPH >= 8.0 && soilPH <= 10.0){
     //add sulfur to lower your soil's PH // or add garden lime to increase the soil's PH
     
    alert("That PH level is out of the proper range for gardening." + "However, if all else fails you should at least be able to grow a crowberry.");
   
 	console.log("That PH level is out of the proper range for gardening." + "However, if all else fails you should at least be able to grow a crowberry.");
 	
+}else {
+console.log("You did not enter a number.");
 }
-
-
-else 
-  alert("You did not enter a number!");
-  console.log("You did not enter a number!");
-
-
-
 
 var berryFinder = prompt("Don't know the soil's PH for the type of berry you'd like to grow?"+ " " +"Please enter the name of the berry you'd like to grow.");
 
-if("blueberries || blueberry") { 
+if (berryFinder === "blueberries"){
 
- alert("Blueberries need a pH between 4.5 and 5.5.");
- console.log ("Blueberries need a pH between 4.5 and 5.5.");
- }
+alert("Blueberries need a pH between 4.0 and 5.5.");
+console.log ("Blueberries need a pH between 4.0 and 5.5.");
+ 
+ }else 
+ 
+ if (berryFinder === "strawberries"){
+
+alert("Strawberries need a pH between 5.5 and 6.5."); 
+console.log("Strawberries need a pH between 5.5 and 6.5."); 
+}
+
+else
+{
+alert("Sorry your berry isn't in the system.");
+console.log("Sorry your berry isn't in the system.");
+
+}
 
 var lower = "L";
 var raise = "R";
