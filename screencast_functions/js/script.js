@@ -166,7 +166,7 @@ console.log(total); //generally, functions that are returning should be assigned
 //}
 
 
-var calcArea = function(width,height){ //definiing
+var calcArea = function(width,height){ //defining
 
 	//code the function runs
 	var area = width * height;
