@@ -17,7 +17,7 @@ var NumberA = prompt("Welcome to the pyschic cyber 8 ball!" + " " + "Simply ask 
 
 var NumberC = parseInt(NumberA);//string changes to a number
  
-fortune = (NumberC >= 1 && NumberC <=6) || ( NumberC >= 7 && NumberC <=10) ? "Signs point to Yes!" : "Outlook Hazy, Try Again!";
+fortune = (NumberC >= 1 && NumberC <=4) || ( NumberC >= 8 && NumberC <=10) ? "Signs point to Yes!" : "Outlook Hazy, Try Again!"; //if the number is greater than or equal to 1 and less than  or equal to four : Signs point to yes! or if number is greater than or equal to 8 and less than or equal to 10 outlook hazy try again!
 
 
 alert(fortune);
@@ -29,9 +29,8 @@ var NumberB = prompt("Want to try the pyschic cyber 8 ball again?" + " " + "Simp
 var NumberD = parseInt(NumberB);//string changes to a number
 
 
-fortune = (NumberD >= 1 && NumberD <=7) || (NumberD >8) ? "Don't count on it!": "Outlook Good!"; console.log(fortune);
-alert(fortune); //greater than or equal to 1, less than 7 = don't count on it. greater than 8 = outlook good
-
+fortune = (NumberD >= 1 && NumberD <=4) || (NumberD >9) ? "Don't count on it!": "Outlook Good!"; console.log(fortune);
+alert(fortune); //greater than or equal to 1, less than or equal to 4 = don't count on it. or greater than 9. otherwise outlook good!
 
 var zelda = "Z"; //Z for Zelda
 var mike = "M"; //M for Mike the Magnificent //else C or any other letter typed will go to confucius
@@ -43,6 +42,7 @@ var pyschicRead = prompt("Would you like a fortune from Zelda," + " " + "Mike th
  console.log(pyschicRead);
  
 if (pyschicRead === "Z"){ 
+ 
     
     alert("Zelda says:" + " " + "When you squeeze an orange, orange juice comes out!" + " " + "-Because that's what's inside." + " " + "Lucky Numbers:" + "7," + "18," + "19," + "24," + "38," + " " + "and powerball," + "12.");      
       
