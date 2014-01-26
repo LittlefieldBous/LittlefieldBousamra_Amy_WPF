@@ -21,12 +21,13 @@ var introP = prompt("Hello, I'm start-up Sal!" + " " + "I am here to help calcul
 if (introP === "Y"){
     var softwareP = prompt("Please enter the cost of any new software purchased.");
     var softwareCost = parseInt(softwareP);//changes string to a number
-    alert("The cost of software is" + " " + "$" + softwareCost + ".");
+    alert("The cost of software is" + " " + "$" + softwareCost + "." + "Remember to save receipts this is a tax write off!");
       console.log(softwareCost);
 }	
         
 else {
    var softwareCost = 0; 
+   alert("You do not have any new software costs.");
    console.log(softwareCost); 
 	
 }
