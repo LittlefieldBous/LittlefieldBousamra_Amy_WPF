@@ -10,13 +10,12 @@
 /*Pattern length (L) is equal to two times the
 sum of the width (W) and length (l) plus 1/2
 inch for a glue flap
-
 L = 2 x (W + l) + 1/2
 
 Pattern Width (W) is equal to two times the
 depth (D) of the box.
-
 W = 2 x D
+
 Side and end flaps width (FW) is equal to
 one-half of the depth (D).
 FW = D/2
@@ -56,7 +55,7 @@ var pLength = 2 * (w + l) + 0.5;//code the function runs 2 times the width and l
 
 var a = patternL(w,l) //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
 	
-console.log("The length of the cardstock needed to make the box is" + " " + a + "inches.");
+console.log("The length of the cardstock needed to make the box is" + " " + a + " " + "inches.");
 
 //calculate pattern width to find out how much cardstock is needed to make the box.
 
@@ -70,9 +69,9 @@ var pWidth = 2 * d; //code the function runs on: Pattern Width (W) is equal to t
 }
 
 
-var b = patternW(d) //invoking what happens after defining functions...how wide is the box?*/
+var b = patternW(d) //invoking what happens after defining functions...how wide is the box?
 
-console.log("The width of the cardstock needed to make the box is" + " " + b + "inches.");
+console.log("The width of the cardstock needed to make the box is" + " " + b +  " " + "inches.");
 
 console.log("To make this shipping box one would order cardstock that is" + " " + a + " " + "inches long and" + " " + b + " " + "inches wide.");
 
@@ -81,23 +80,21 @@ alert("To make this shipping box one would order cardstock that is" + " " + a + 
 
 alert("Finally lets calculate the side flaps for the box." + " " + "Click, okay to continue.")
 
+var depth = Number(prompt("Please put in the boxes depth." + " " + "Measure inches but enter the numerical value only."));
 
-/*var flapW = function (d){ //defining... d is the depth of the box. Note: the parameters are the storage bins  	
-var pWidth = 2 * d; //code the function runs on: Pattern Width (W) is equal to two times the depth (D) of the box.
- return pWidth; //what it returns
+
+var flapWidth = function(depth){ //defining... The depth of the box. Note: the parameters are the storage bins  	
+var fWidth = depth/2; //code the function runs on:  depth/2
+return fWidth; //what it returns
 
 }
 
 
-/*var b = patternW(3) //invoking what happens after defining functions...how wide is the box?*/
+var c = flapWidth(depth) //invoking what happens after defining functions...what is the flapwidth?
 
-/*console.log("The width of the cardstock needed to make the box is" + " " + b + "inches.");
+console.log("The flapwidth of the cardstock needed to make the box is" + " " + c +  " " + "inches.");
 
-console.log("To make this shipping box one would order cardstock that is" + " " + a + " " + "inches long and" + " " + b + " " + "inches wide.");
-
-alert("To make this shipping box one would order cardstock that is" + " " + a + " " + "inches long and" + " " + b + " " + "inches wide.");*/
-
-
+alert("The flapwidth of the cardstock needed to make the box is" + " " + c +  " " + "inches.");
 
 
 
