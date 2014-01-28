@@ -1,86 +1,41 @@
 //JavaScript
 
 //Amy Littlefield-Bousamra
-//Functions Worksheet:
+//Functions Wacky
 
-//1. Calculate the circumference of a circle
-//C= d * 3.14 or (r * 2)*3.14
-
-//using an Anonymous function
+//Silly Bug Anthology: Create your own silly bug
 
 
-var calcCircum = function(radius) { //defining
-	var circum= (radius * 2) * 3.14; //code the function runs
-	return circum; //what it returns
-	
-}
+//What color is the bug?
 
-var a = calcCircum(4);//invoking happens after defining the functions
+//what size is your bug? tiny, small big, gigantic?
 
-console.log("The circumference of the circle is" + " " + a + "."); //what it prints out
+//does it have a design on it? Y or no?
 
-//2. Stung!
+//if so what is the desig?
 
-/*It takes 8.666666667 bee stings per pound to kill an animal. Calculate how many bee stings are needed to kill an animal in a function
+//how many eyes does the bug have? 
 
-    Given:
-        Victim’s weight (in pounds)     
-    Parameter(s) for function:
-        Victim’s weight (in pounds)
-    Return:
-        Number of Bee stings
-    Result to print to the console:
-        “It takes X bee stings to kill this animal.*/
+//what color are the bugs eyes?
 
-//basic function
+//how many legs does this bug have?
 
-var totalStings = calcStings(20); //invoking the function
+//describe its legs (adjective)
 
+//what color are the antennas?
 
-function calcStings(pounds){ //holds parameters the storage container for the arguments which is the amount of pounds
+//Are the antennas fuzzy, curly, long or short?
 
-// 20lbs is approx my cat's wieght..contains the weight of given animal... information passed in storage holds argument
+//Can your silly bug fly? Y or n
 
-	var beeStings = pounds * 8.666666667; //calculations number of pounds * # of beestings per pound
-	return(beeStings);//function is spitting info out..returning the number of bee stings per pounds
-	
-}
-	console.log("It takes" + " " + totalStings + " " + " bee stings" + "...to kill a fat cat.");
-	
+//what do the wings look like? fill in the blank...the wings are 
 
+//where does your silly bug live?
 
-//anonymous function:
+//what does your silly bug eat?
 
+//does your bug make a sound?
 
-var beeStung = function(pounds) { //defining
-	var totalB = pounds * 8.666666667;  //code the function runs
-	return totalB; //what it returns
-	
-}
+//what sound does this silly bug make?
 
-var a = beeStung(4);//invoking happens after defining the functions
-
-console.log("It takes" + " " + a + " " + " bee stings" + "...to kill a rat.");//what it prints out
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//what is your bugs special talent? This bug has a known for ......
