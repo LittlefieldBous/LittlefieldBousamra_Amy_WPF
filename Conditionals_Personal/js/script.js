@@ -21,10 +21,7 @@ var veryAcid = >=5.0 <= 5.4;
 var extremeAcid = >=4.0 <= 4.9;*/
 
 
-var FindPH = prompt("Please enter your soil's PH."); //person enters there soils ph
-
-var soilPH = parseInt(FindPH); 
-
+var soilPH = Number(prompt("Please enter your soil's PH.")); //person enters there soils ph
 
 if(soilPH >= 7.0 && soilPH <= 7.5){
 
@@ -32,8 +29,8 @@ alert("Your soil is alkaline." + " " + "Not many berries grow in this soil's PH 
 
  console.log("Your soil is alkaline." + " " + "Not many berries grow in this soil's PH but saskatoon berries and salmonberries can grow in this soil"); 
  
-   }else if (soilPH >= 6.5 && soilPH <= 6.9){ //This one is not-working instead of the neutral alert it goes to the next one, slightly acidic.
- 
+   }else if (soilPH >= 6.5 && soilPH <= 6.9){ 
+    
  alert("Your soil is in the neutral PH range." + " " + "Berries that can grow in this soil PH include:" + " " + "saskatoon berries, currants, gooseberries, coffeeberries, black chokeberry, wolfberries, pineberries, crowberries and salmonberries.");
 
   
@@ -76,14 +73,14 @@ console.log("You did not enter a number.");
 
 var berryFinder = prompt("Don't know the soil's PH for the type of berry you'd like to grow?"+ " " +"Please enter the name of the berry you'd like to grow.");
 
-if (berryFinder === "blueberries"){
+if (berryFinder === "blueberry"){
 
 alert("Blueberries need a pH between 4.0 and 5.5.");
 console.log ("Blueberries need a pH between 4.0 and 5.5.");
  
  }else 
  
- if (berryFinder === "strawberries"){
+ if (berryFinder === "strawberry"){
 
 alert("Strawberries need a pH between 5.5 and 6.5."); 
 console.log("Strawberries need a pH between 5.5 and 6.5."); 
@@ -101,7 +98,7 @@ var raise = "R";
 
 //changing your soil's PH 
 
-var changePH= prompt("Will you need to lower or raise your soil's PH?" + " " + "Enter" + " " + " " + "L" + "for lower or" + " "  + "R" + " " + "if you'll need to raise your soil's PH.");
+var changePH= prompt("Will you need to lower or raise your soil's PH?" + " " + "Enter" + " " + "L" + " " + "for lower or" + " "  + "R" + " " + "if you'll need to raise your soil's PH.");
 
  console.log(changePH);
  

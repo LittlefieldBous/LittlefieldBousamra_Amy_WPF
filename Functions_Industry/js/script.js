@@ -1,70 +1,101 @@
 //JavaScript
 
 //Amy Littlefield-Bousamra
-//Functions Worksheet:
+//Functions_industry:
 
-//1. Calculate the circumference of a circle
-//C= d * 3.14 or (r * 2)*3.14
-
-//using an Anonymous function
+//Packaging Design Calculations
 
 
-var calcCircum = function(radius) { //defining
-	var circum= (radius * 2) * 3.14; //code the function runs
-	return circum; //what it returns
-	
+//1. Making a standard shipping box with cardstock:
+/*Pattern length (L) is equal to two times the
+sum of the width (W) and length (l) plus 1/2
+inch for a glue flap
+
+L = 2 x (W + l) + 1/2
+
+Pattern Width (W) is equal to two times the
+depth (D) of the box.
+
+W = 2 x D
+Side and end flaps width (FW) is equal to
+one-half of the depth (D).
+FW = D/2
+
+* On small card stock boxes, a 1/2" glue tab is sufficient.
+On larger boxes, a larger glue tab may be required
+//L = 2 x (W + l) + 1/2*/
+
+//Making a Simple Folded Box
+//1. Make a simple folded box that is 2" wide, 3"
+//long, and 1" deep.
+
+//2. Determine the length of the card stock you
+//need to make the box. The length of the card
+//stock will be twice the sum of the width and
+//length of the box, plus 1/2" for the glue tab.
+
+//L = 2 x (W + l) + 1/2
+//L = 2 x ( 2 + 3) + 1/2
+//L = 2 x 5 + 1/2
+//L = 10 + 1/2
+//L = 10 1/2
+
+//Anonymous function
+
+alert("Welcome to the package designer assistant!" + " " + "First we will calculate how much cardstock will be needed to make a simple shipping box." + " " + "Measurements include:" + "horizontal-side length, and horizontal-side width," + " " +  "Please note the standard 1/2 inch for glue tabs are calculated in this formula." + " " + "Click okay to continue.");
+
+//calculate pattern length to find out how much cardstock is needed to make the box.
+var w = Number(prompt("Enter the boxes horizontal-side width here." + " " + "Please enter the numerical value only."));
+
+var l = Number(prompt("Please put in the boxes horizontal-side length"));
+
+var patternL = function (w,l){ //defining... w,l, in the parameters are the storage bins  	
+var pLength = 2 * (w + l) + 0.5;//code the function runs 2 times the width and length plus a 1/2 inch for the glue tabs on the box.
+	return pLength; //what it returns
 }
 
-var a = calcCircum(4);//invoking happens after defining the functions
-
-console.log("The circumference of the circle is" + " " + a + "."); //what it prints out
-
-//2. Stung!
-
-/*It takes 8.666666667 bee stings per pound to kill an animal. Calculate how many bee stings are needed to kill an animal in a function
-
-    Given:
-        Victim’s weight (in pounds)     
-    Parameter(s) for function:
-        Victim’s weight (in pounds)
-    Return:
-        Number of Bee stings
-    Result to print to the console:
-        “It takes X bee stings to kill this animal.*/
-
-//basic function
-
-var totalStings = calcStings(20); //invoking the function
-
-
-function calcStings(pounds){ //holds parameters the storage container for the arguments which is the amount of pounds
-
-// 20lbs is approx my cat's wieght..contains the weight of given animal... information passed in storage holds argument
-
-	var beeStings = pounds * 8.666666667; //calculations number of pounds * # of beestings per pound
-	return(beeStings);//function is spitting info out..returning the number of bee stings per pounds
+var a = patternL(w,l) //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
 	
-}
-	console.log("It takes" + " " + totalStings + " " + " bee stings" + "...to kill a fat cat.");
-	
+console.log("The length of the cardstock needed to make the box is" + " " + a + "inches.");
+
+//calculate pattern width to find out how much cardstock is needed to make the box.
+
+var d = Number(prompt("Please put in the boxes depth." + " " + "Measure inches but enter the numerical value only."));
 
 
-//anonymous function:
+var patternW = function(d){ //defining... d is the depth of the box. Note: the parameters are the storage bins  	
+var pWidth = 2 * d; //code the function runs on: Pattern Width (W) is equal to two times the depth (D) of the box.
+ return pWidth; //what it returns
 
-
-var beeStung = function(pounds) { //defining
-	var totalB = pounds * 8.666666667;  //code the function runs
-	return totalB; //what it returns
-	
 }
 
-var a = beeStung(4);//invoking happens after defining the functions
 
-console.log("It takes" + " " + a + " " + " bee stings" + "...to kill a rat.");//what it prints out
+var b = patternW(d) //invoking what happens after defining functions...how wide is the box?*/
+
+console.log("The width of the cardstock needed to make the box is" + " " + b + "inches.");
+
+console.log("To make this shipping box one would order cardstock that is" + " " + a + " " + "inches long and" + " " + b + " " + "inches wide.");
+
+alert("To make this shipping box one would order cardstock that is" + " " + a + " " + "inches long and" + " " + b + " " + "inches wide.");
 
 
+alert("Finally lets calculate the side flaps for the box." + " " + "Click, okay to continue.")
 
 
+/*var flapW = function (d){ //defining... d is the depth of the box. Note: the parameters are the storage bins  	
+var pWidth = 2 * d; //code the function runs on: Pattern Width (W) is equal to two times the depth (D) of the box.
+ return pWidth; //what it returns
+
+}
+
+
+/*var b = patternW(3) //invoking what happens after defining functions...how wide is the box?*/
+
+/*console.log("The width of the cardstock needed to make the box is" + " " + b + "inches.");
+
+console.log("To make this shipping box one would order cardstock that is" + " " + a + " " + "inches long and" + " " + b + " " + "inches wide.");
+
+alert("To make this shipping box one would order cardstock that is" + " " + a + " " + "inches long and" + " " + b + " " + "inches wide.");*/
 
 
 
