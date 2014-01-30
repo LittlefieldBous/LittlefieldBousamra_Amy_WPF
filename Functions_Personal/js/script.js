@@ -71,7 +71,7 @@ alert("The 30% of furnishings and that should be applied to this room equals" + 
 
 // Now try measuring your livingroom...
 
-var w = Number(prompt("Enter the length of your livingroom using inches." + " " + "Please enter the numerical value only" + " " + "For example if your room is 22 inches in length you would enter," + "22."));
+var w = Number(prompt("Enter the length of your livingroom." + " " + "Please use inches as the standard of measurement." + " " + "Please enter the numerical value only" + " " + "For example if your room is 22 inches in length you would enter," + "22."));
 
 var l = Number(prompt("Enter the width of your livingroom using inches." + " " + "Please enter the numerical value only" + " " + "For example if your room is 14 inches wide you would enter," + "14."));
 
@@ -88,7 +88,7 @@ console.log("The amount or 30% of furnishings that should be applied to this roo
 
 //Next to measure furniture...until they are less than or equal to <=r or || are  >=r + 3 
 
-//Example: Sofa: (35/12) * (84/12) = 21 ft Rounded
+//1. first or only Sofa: (35/12) * (84/12) = 21 ft Rounded
     
 
 var wSofa = Number(prompt("Enter the sofa's length or horizontal-side width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if your sofa's length is 84 inches just type in the number," + "84."));
@@ -103,6 +103,40 @@ var sofaSqft = Math.round(wSofa/12) * Math.round(lSofa/12);//code the function r
 var s = sofaCalc(wSofa,lSofa); //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
 	
 console.log("The amount of space the sofa will utilize is" + " " + s + " " + "sqft.");
+
+
+var yes = "y";
+var no = "n";
+
+//2. is there a second sofa?
+
+var sofaQ = prompt("Does your livingroom have another sofa or loveseat?" + " "
+ + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
+ console.log(sofaQ);
+ 
+if (sofaQ === "y" || "Y"){
+
+    var wSofab = Number(prompt("Enter the sofa's length or horizontal-side width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if your sofa's length is 84 inches just type in the number," + "84."));
+
+   var lSofab = Number(prompt("Please start from the outer part of the sofa's seat and measure to it's back." + " " + "This is called the depth of the sofa but can also be looked at as the width." + " " + "Please enter the numerical value only."));
+
+   var sofaCalcb = function (wSofab,lSofab){ //defining... wSofa,lSofa, in the parameters are the storage bins  	
+   var sofaSqftb = Math.round(wSofab/12) * Math.round(lSofab/12);//code the function runs the width of the sofa /12 the length of the sofa/12. Next it multiplies the two to get the amount of space/sqft that the sofa will take up in the room. This is an estimate so all numbers should be rounded.
+	return Math.round(sofaSqftb); //what it returns
+}
+
+var sb = sofaCalc(wSofab,lSofab); //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
+
+console.log("The amount of space the sofa will utilize is" + " " + sb + " " + "sqft.");
+}
+        
+else {
+   var sb = 0; 
+   alert("You do not another sofa in this room.");
+   console.log(sb); 
+	
+}
+
 
 
 
