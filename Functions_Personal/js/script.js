@@ -9,7 +9,7 @@
 
 
 //Introduction
-alert("This program examines how one can apply the concept of the golden ratio when designing a room in their home."+ " " + "Utilizing 60-30-10 one must fill 30 percent of the room with furnishings, 10% with accessories and allow the rest 60% to maintain open space." + " " + "Click okay for an example and then design your own room using the golden ratio.");
+alert("This program examines how one can apply the concept of the golden ratio when designing a room in their home."+ " " + "30% of the room with furnishings, 10% with accessories and allow the rest 60% to maintain open space." + " " + "Click okay for an example and then design your own room using the 60-30-10 rule.");
 
 
 //Example
@@ -25,7 +25,7 @@ function calcArea(w,h){ //w,h, parameters are the storage bins //w 14 and h 22 t
 
 console.log(total);//The total amount of squarefoot used for furnishings or accessories.
 
-alert("A livingroom that is 12ft wide and 22ft long has a total of 308 sqft." + " " +  "The 30% of furnishings that should be applied to this room equals" + " " + total + "sqft." + "To see a visual example please view the floor plan on this page.");
+alert("A livingroom that is 12ft wide and 22ft long has a total of 308 sqft." + " " +  "The 30% of furnishings that should be applied to this room equals" + " " + total + " " + "sqft." + " " + "To see a visual example please view the floor plan on this page.");
 
 
 var total = calcArea(14,22); //invoking the function (anonymous invoking is placed after function
@@ -43,12 +43,12 @@ alert("Next we are going to calculate our own livingroom space." + " " + "Click 
 
 // 1. Now try measuring your livingroom...
 
-var w = Number(prompt("Enter the length of your livingroom using inches." + " " + "Please enter the numerical value only." + " " + "For example if your room is 22 inches in length you would enter," + " " + "22."));
+var w = Number(prompt("Enter the length of your livingroom using feet." + " " + "Please enter the numerical value only." + " " + "For example if your room is 22 feet long you would enter," + " " + "22."));
 
-var l = Number(prompt("Enter the width of your livingroom using inches." + " " + "Please enter the numerical value only" + " " + "For example if your room is 14 inches wide you would enter," + " " + "14."));
+var l = Number(prompt("Enter the width of your livingroom using feet" + " " + "Please enter the numerical value only" + " " + "For example if your room is 14 feet wide you would enter," + " " + "14."));
 
 var roomCalc = function (w,l){ //defining... wSofa,lSofa, in the parameters are the storage bins  	
-var roomSqft = (Math.round(w/12) * Math.round(l/12))* .30;//code the function runs the width of the sofa /12 the length of the sofa/12. Next it multiplies the two to get the amount of space/sqft that the sofa will take up in the room. This is an estimate so all numbers should be rounded.
+var roomSqft = (Math.round(w * l))* .30;//code the function runs the width of the sofa /12 the length of the sofa/12. Next it multiplies the two to get the amount of space/sqft that the sofa will take up in the room. This is an estimate so all numbers should be rounded.
 	return Math.round(roomSqft); //what it returns
 }
 
@@ -188,14 +188,14 @@ else {
 var yes = "y";
 
 
-var bookshQ = prompt("Does your living space have a bookshelf?" + " " + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
+var bookshQ = prompt("Does your living space have a bookshelf, desk or a hutch?" + " " + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
  console.log(bookshQ);
  
 if (bookshQ=== "y"){
 
-    var wbooksh = Number(prompt("Enter the bookshelf's width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if the bookshelf's length is 13 inches just type in the number," + " " + "13."));
+    var wbooksh = Number(prompt("Enter the bookshelf's or other rectangular item's width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if the bookshelf's length is 13 inches just type in the number," + " " + "13."));
 
-   var lbooksh = Number(prompt("Enter the bookshelf's length here using inches." + " " + "Please enter the numerical value only." + " " +  "For example if your table's length is 35 inches just type in the number," + " " + "35."));
+   var lbooksh = Number(prompt("Enter the bookshelf's length or other rectangulart item here using inches." + " " + "Please enter the numerical value only." + " " +  "For example if your table's length is 35 inches just type in the number," + " " + "35."));
 
    var bookshCalc = function (wbooksh,lbooksh){ //defining... the width of the coffee table and the length of the coffee table. (the parameters are the storage bins.)
      	
@@ -204,15 +204,15 @@ if (bookshQ=== "y"){
 	return Math.round(bookshSqft); //what it returns //it returns what is defined in the function.
 }
 
-var bksh= ctableCalc(wbooksh,lbooksh); //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
+var bk= ctableCalc(wbooksh,lbooksh); //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
 
-console.log("The amount of space the bookshelf will utilize is" + " " + bksh + " " + "sqft.");
+console.log("The amount of space the bookshelf will utilize is" + " " + bk + " " + "sqft.");
 }
         
 else {
-   var bksh = 0; //coffee table equals zero
+   var bk = 0; //coffee table equals zero
    alert("You do not have a bookshelf in this room.");
-   console.log(bksh); 
+   console.log(bk); 
 	
 }
 
@@ -221,7 +221,7 @@ else {
 var yes = "y";
 
 
-var sideTabQ = prompt("Does your living space have any additional tables?" + " " + "This could include side tables or other accent tables." + " " + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
+var sideTabQ = prompt("Does your living space have any additional rectangular tables?" + " " + "This could include side tables or other accent tables." + " " + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
  console.log(sideTabQ);
  
 if (sideTabQ === "y"){
@@ -230,7 +230,7 @@ if (sideTabQ === "y"){
 
     var wSideT = Number(prompt("Enter the tables's width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if the table's length is 23 inches just type in the number," + " " + "23."));
 
-   var lSideT = Number(prompt("Enter the table's length here using inches." + " " + "Please enter the numerical value only." + " " +  "For example if your table's length is 18 inches just type in the number," + " " + "18."));
+   var lSideT = Number(prompt("Enter the table's length here using inches." + " " + "Please enter the numerical value only." + " " +  "For example if your table's length is 14 inches just type in the number," + " " + "14."));
 
    var sideTCalc = function (wSideT,lSideT,numsideT){ //defining... the width of the side table and the length of the side table. (the parameters are the storage bins.)
      	
@@ -239,15 +239,15 @@ if (sideTabQ === "y"){
 	return Math.round(sideTSqft); //what it returns //it returns what is defined in the function.
 }
 
-var sideT = sideTCalc(wSideT,lSideT,numsideT); //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
+var st = sideTCalc(wSideT,lSideT,numsideT); //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
 
-console.log("The amount of space the accent or side table will utilize is" + " " + sideT  + " " + "sqft.");
+console.log("The amount of space the accent or side table will utilize is" + " " + st  + " " + "sqft.");
 }
         
 else {
-   var sideT  = 0; // table equals zero
+   var st  = 0; // table equals zero
    alert("You do not have a side table in this room.");
-   console.log(sideT); 
+   console.log(st); 
 	
 }
 
@@ -257,7 +257,7 @@ else {
 var yes = "y";
 
 
-var roundTabQ = prompt("Does your living space have any round accent tables?" + " " + "This could include side tables or other accent tables." + " " + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
+var roundTabQ = prompt("Does your living space have any round tables?" + " " + "This could include a round dining table, side tables or other accent tables." + " " + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
  console.log(roundTabQ);
  
 if (roundTabQ === "y"){
@@ -274,17 +274,144 @@ if (roundTabQ === "y"){
 	return Math.round(roundTSqft); //what it returns //it returns what is defined in the function.
 }
 
-var rT = roundTCalc (droundT,numRT); //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
+var rt = roundTCalc (droundT,numRT); //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
 
-console.log("The amount of space the round table/s will utilize is" + " " + rT  + " " + "sqft.");
+console.log("The amount of space the round table/s will utilize is" + " " + rt  + " " + "sqft.");
 }
         
 else {
-   var rT  = 0; // table equals zero
+   var rt  = 0; // table equals zero
    alert("You do not have a round table in this room.");
-   console.log(rT); 
+   console.log(rt); 
 	
 }
+
+
+//8. Does your living space have a dining table? 
+
+
+var yes = "y";
+
+
+var dinTabQ = prompt("Does your living space have a rectangular dining table?" + " " + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
+ console.log(dinTabQ);
+ 
+if (dinTabQ === "y"){
+
+    var wdinT = Number(prompt("Enter the dining tables's width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if the table's length is 36 inches just type in the number," + " " + "36.")); //asking for width of the dining table in inches
+
+   var ldinT = Number(prompt("Enter the dining table's length here using inches." + " " + "Please enter the numerical value only." + " " +  "For example if your table's length is 72 inches just type in the number," + " " + "72.")); //asking for the length of the dining table in inches
+
+   var dinTCalc = function (wdinT,ldinT){ //defining... the width of the dining table and the length of the side table. (the parameters are the storage bins.)
+     	
+   var dinTSqft = (Math.round(wdinT/12) * Math.round(ldinT/12));//code the function runs the width of the dining table /12 the length of the dining table/12. This is an estimate so all numbers should be rounded.
+   
+	return Math.round(dinTSqft); //what it returns //it returns outcome of the code/calculations above
+}
+
+var dt = dinTCalc(wdinT,ldinT); //invoking what happens after defining functions...
+
+console.log("The amount of space the dining table will utilize is" + " " + dt  + " " + "sqft.");
+}
+        
+else {
+   var dt  = 0; // table equals zero
+   alert("You do not have a dining table in this room.");
+   console.log(dt); 
+	
+}
+
+
+//9. dining chairs or other chairs in the room
+
+var yes = "y";
+
+
+var dinChQ = prompt("Will you have any dining chair or other accent chairs?" + " "
+ + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
+ console.log(dinChQ);
+ 
+if (dinChQ === "y"){
+
+	var ndinChair = Number(prompt("How many chairs will you have around your dining table or in this living space?"));
+
+    var wdinChair = Number(prompt("Enter the width of one chair here." + " " + "Please measure using inches but enter the numerical value only." + " " + "For example if your chair's length is 19 inches just type in the number," + " " + "19."));
+    
+
+   var ldinChair = Number(prompt("Please start from the outer part of the chair and measure to it's back." + " " + "Please enter the numerical value only." + " " + "For example," + " " + "19."));
+
+   var dinChairCalc = function (wdinChair, ldinChair,ndinChair){ //defining... the width of the armchair, the length of the arm chair and how many armchairs(numchair) in the parameters/storage bins
+     	
+   var dinChairSqft= Math.round((wdinChair/12) * Math.round(ldinChair/12))* ndinChair;//code the function runs the width of the chair /12 the length of the chair/12. Next it multiplies the two to get the amount of space/sqft that a chair  will take up in the room. Then it multiplies it by the number of armchairs placed in the room. Numbers are rounded.
+   
+	return Math.round(dinChairSqft); //what it returns
+}
+
+var dch = dinChairCalc(wdinChair,ldinChair,ndinChair); //invoking what happens after defining functions...
+
+console.log("The amount of squarefeet these chair/s utilize is" + " " + dch + " " + "sqft.");
+}
+        
+else {
+   var dch = 0; 
+   alert("You do not have any dining or other chairs in this room.");
+   console.log(dch); //dinCh = dining chairs	
+}
+
+
+
+//10. plants or other additional ideas taking up space with a lenght and width
+var yes = "y";
+
+
+var itemQ = prompt("Will you have any other items taking up floor space?" + " "
+ + "This could include floor plants etc." + " " + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
+ console.log(itemQ);
+ 
+if (itemQ === "y"){
+
+	var itemNum = Number(prompt("How many of these items or plants do you have in this living space?"));
+
+    var wItem = Number(prompt("Enter the width of the item here." + " " + "For example if this is a floor plant enter," + " " + "12" + " " + "for 12 inches." + "Please measure the width using inches but enter the numerical value only."));
+    
+
+   var lItem = Number(prompt("Enter the length of the item here." + " " + "For example if this is a floor plant enter," + " " + "12" + " " + "for 12 inches." + "Please measure the width using inches but enter the numerical value only."));
+
+   var itemCalc = function (wItem, lItem,itemNum ){ //defining... the width of the armchair, the length of the arm chair and how many armchairs(numchair) in the parameters/storage bins
+     	
+   var itemSqft= Math.round((wItem/12) * Math.round(lItem/12))* itemNum ;//code the function runs the width of the armchair /12 the length of the armchair/12. Next it multiplies the two to get the amount of space/sqft that the armchairs will take up in the room. Then it multiplies it by the number of armchairs placed in the room. Number are rounded.
+   
+	return Math.round(itemSqft); //what it returns
+}
+
+var i = itemCalc(wItem,lItem,itemNum); //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
+
+console.log("The amount of squarefeet these items utilize is" + " " + i + " " + "sqft.");
+}
+        
+else {
+   var i = 0; 
+   alert("You do not have any plants or other addtional items in this room.");
+   console.log(i); // item= additional item such as plants	
+}
+
+// get a total of all the items taking up floor space and see if it equal's 30% of the room's space
+
+
+alert("Now that all the items taking up space in your room have been calculated let's find out if they take approximately 30% of the room's space." + " " + "As previousy determined 30% of your room would be" + " " + total + " " +  "sqft.")
+
+var troomSqft = (s + sb + ach + ct + bk + st + rt + dt + dch + i);//code the function runs the width of the sofa /12 the length of the sofa/12. Next it multiplies the two to get the amount of space/sqft that the sofa will take up in the room. This is an estimate so all numbers should be rounded.
+
+
+console.log(troomSqft);
+
+
+alert("The amount of furnishings in this room equals" + " " + troomSqft + "ft.");
+
+console.log("The amount or 30% of furnishings that should be applied to this room equals" + " " + total + "ft.");
+
+
+
 
 
 
