@@ -25,7 +25,7 @@ function calcArea(w,h){ //w,h, parameters are the storage bins //w 14 and h 22 t
 
 console.log(total);//The total amount of squarefoot used for furnishings or accessories.
 
-alert("A livingroom that is 12ft wide and 22ft long has a total of 308 sqft." + " " +  "The 30% of furnishings that should be applied to this room equals" + " " + total + " " + "sqft." + " " + "To see a visual example please view the floor plan on this page.");
+alert("A livingroom that is 14ft wide and 22ft long has a total of 308 sqft." + " " +  "The 30% of furnishings that should be applied to this room equals" + " " + total + " " + "sqft." + " " + "To see a visual example please view the floor plan on this page.");
 
 
 var total = calcArea(14,22); //invoking the function (anonymous invoking is placed after function
@@ -54,18 +54,17 @@ var roomSqft = (Math.round(w * l))* .30;//code the function runs the width of th
 
 var r = roomCalc(w,l); //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
 	
-alert("The amount or 30% of furnishings that should be applied to this room equals" + " " + total + "ft.");
+alert("The amount or 30% of furnishings that should be applied to this room equals" + " " + total + "sqft.");
 
-console.log("The amount or 30% of furnishings that should be applied to this room equals" + " " + total + "ft.");
+console.log("The amount or 30% of furnishings that should be applied to this room equals" + " " + total + "sqft.");
 
-//Next to measure furniture...until they are less than or equal to <=r or || are  >=r + 3 
 
-//2. first or only Sofa: (35/12) * (84/12) = 21 ft Rounded
+//2. first or only Sofa: 
     
 
-var wSofa = Number(prompt("Enter the sofa's length or horizontal-side width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if your sofa's length is 84 inches just type in the number," + " " + "84."));
+var lSofa = Number(prompt("Enter the sofa's length or horizontal-side width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if your sofa's length is 80 inches just type in the number," + " " + "80."));
 
-var lSofa = Number(prompt("Please start from the outer part of the sofa's seat and measure to it's back." + " " + "This is called the depth of the sofa but can also be looked at as the width." + " " + "Please enter the numerical value only." + " " +  "For example if your sofa's width is 35 inches just type in the number," + " " + "35."));
+var wSofa = Number(prompt("Please start from the outer part of the sofa's seat and measure to it's back." + " " + "This is called the depth of the sofa but can also be looked at as the width." + " " + "Please enter the numerical value only." + " " +  "For example if your sofa's width is 34 inches just type in the number," + " " + "34."));
 
 var sofaCalc = function (wSofa,lSofa){ //defining... wSofa,lSofa, in the parameters are the storage bins  	
 var sofaSqft = Math.round(wSofa/12) * Math.round(lSofa/12);//code the function runs the width of the sofa /12 the length of the sofa/12. Next it multiplies the two to get the amount of space/sqft that the sofa will take up in the room. This is an estimate so all numbers should be rounded.
@@ -82,13 +81,13 @@ var yes = "y";
 
 //3. Is there a second sofa?
 
-var sofaQ = prompt("Does your livingroom have another sofa or loveseat?" + " "
+var sofabQ = prompt("Does your livingroom have another sofa or loveseat?" + " "
  + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
- console.log(sofaQ);
+ console.log(sofabQ);
  
-if (sofaQ === "y"){
+if (sofabQ === "y"){
 
-    var wSofab = Number(prompt("Enter the sofa's length or horizontal-side width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if your sofa's length is 84 inches just type in the number," + "84."));
+    var wSofab = Number(prompt("Enter the sofa's length or horizontal-side width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if your sofa's length is 82 inches just type in the number," + "82."));
 
    var lSofab = Number(prompt("Please start from the outer part of the sofa's seat and measure to it's back." + " " + "This is called the depth of the sofa but can also be looked at as the width." + " " + "Please enter the numerical value only."));
 
@@ -109,13 +108,16 @@ else {
 	
 }
 
+var tota = s + sb;
+console.log(tota); //total of 2 items so far
+
 
 //4. will you have arm chairs and if so how many?
 
 var yes = "y";
 
 
-var armChQ = prompt("Does your livingroom have an armchair/s?" + " "
+var armChQ = prompt("Does your livingroom have armchair/s?" + " "
  + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
  console.log(armChQ);
  
@@ -123,10 +125,10 @@ if (armChQ === "y"){
 
 	var numChair = Number(prompt("How many arm chairs will you have in your living room?"));
 
-    var wArmChair = Number(prompt("Enter the length or horizontal-side width of one arm chair here." + " " + "Please measure using inches but enter the numerical value only." + " " + "For example if your arm chair's length is 35 inches just type in the number," + " " + "35."));
+    var wArmChair = Number(prompt("Enter the length or horizontal-side width of one arm chair here." + " " + "Please measure using inches but enter the numerical value only." + " " + "For example if your arm chair's length is 30 inches just type in the number," + " " + "30."));
     
 
-   var lArmChair = Number(prompt("Please start from the outer part of the arm chair and measure to it's back." + " " + "Please enter the numerical value only." + " " + "For example," + " " + "35."));
+   var lArmChair = Number(prompt("Please start from the outer part of the arm chair and measure to it's back." + " " + "Please enter the numerical value only." + " " + "For example," + " " + "30."));
 
    var armChairCalc = function (wArmChair,lArmChair,numChair){ //defining... the width of the armchair, the length of the arm chair and how many armchairs(numchair) in the parameters/storage bins
      	
@@ -147,6 +149,10 @@ else {
 	
 }
 
+var totb = s + sb + ach;
+console.log(totb); //total of three items so far
+
+
 //5. coffee table
 
 var yes = "y";
@@ -159,9 +165,9 @@ var coffeeTQ = prompt("Does your livingroom have a coffee/rectangular table?" + 
  
 if (coffeeTQ === "y"){
 
-    var wcoffeeT = Number(prompt("Enter the table's width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if your table's length is 30 inches just type in the number," + " " + "30."));
+    var wcoffeeT = Number(prompt("Enter the table's width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if your table's length is 28 inches just type in the number," + " " + "28."));
 
-   var lcoffeeT = Number(prompt("Enter the table's length here using inches." + " " + "Please enter the numerical value only." + " " +  "For example if your table's length is 48 inches just type in the number," + " " + "48."));
+   var lcoffeeT = Number(prompt("Enter the table's length here using inches." + " " + "Please enter the numerical value only." + " " +  "For example if your table's length is 45 inches just type in the number," + " " + "45."));
 
    var ctableCalc = function (wcoffeeT,lcoffeeT){ //defining... the width of the coffee table and the length of the coffee table. (the parameters are the storage bins.)
      	
@@ -182,8 +188,11 @@ else {
 	
 }
 
+var totc = s + sb + ach + ct;
+console.log(totc);//total possible of 4 items so far
 
- //6. bookshelf
+
+ //6.bookshelf
 
 var yes = "y";
 
@@ -193,7 +202,7 @@ var bookshQ = prompt("Does your living space have a bookshelf, desk or a hutch?"
  
 if (bookshQ=== "y"){
 
-    var wbooksh = Number(prompt("Enter the bookshelf's or other rectangular item's width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if the bookshelf's length is 13 inches just type in the number," + " " + "13."));
+    var wbooksh = Number(prompt("Enter the bookshelf's or other rectangular item's width here using inches." + " " + "Please enter the numerical value only." + " " + "For example if the bookshelf's width is 13 inches just type in the number," + " " + "13."));
 
    var lbooksh = Number(prompt("Enter the bookshelf's length or other rectangulart item here using inches." + " " + "Please enter the numerical value only." + " " +  "For example if your table's length is 35 inches just type in the number," + " " + "35."));
 
@@ -210,11 +219,16 @@ console.log("The amount of space the bookshelf will utilize is" + " " + bk + " "
 }
         
 else {
-   var bk = 0; //coffee table equals zero
+   var bk = 0; //book shelf equals zero
    alert("You do not have a bookshelf in this room.");
    console.log(bk); 
 	
 }
+
+var totd = s + sb + ach + ct + bk;
+console.log(totd);//total possible of 5 items so far
+
+
 
 //6. side tables or small accent tables
 
@@ -251,6 +265,10 @@ else {
 	
 }
 
+var tote = s + sb + ach + ct + bk + st;
+console.log(tote);//total possible of 6 items so far
+
+
 
 //7. Round accent tables
 
@@ -261,22 +279,25 @@ var roundTabQ = prompt("Does your living space have any round tables?" + " " + "
  console.log(roundTabQ);
  
 if (roundTabQ === "y"){
+    
+    var  p = 3.14
 
     var numRT = Number(prompt("How many round tables will you have in your living space?"));
 
-    var droundT = Number(prompt("Enter the tables's diameter here using inches." + " " + "Please enter the numerical value only." + " " + "For example if the table's diameter is 48 inches just type in the number," + " " + "48."));
+    var droundT = Number(prompt("Enter the tables's diameter here using inches." + " " + "Please enter the numerical value only." + " " + "For example if the table's diameter is 16 inches just type in the number," + " " + "16."));
 
    
-   var roundTCalc = function (droundT,numRT){ //defining... the width of the side table and the length of the side table. (the parameters are the storage bins.)
+   var roundTCalc = function (droundT,numRT,p){ //defining... the width of the side table and the length of the side table. (the parameters are the storage bins.)
      	
-   var roundTSqft = Math.round(droundT/12) * numRT;//code the function runs the width of the side table /12 the length of the side table/12. Next it multiplies the two to get the amount of space/sqft that the side table will take up in the room. if more than one table it will multiply by 2 and so on...This is an estimate so all numbers should be rounded.
-   
+   var roundTSqft = Math.round((droundT/12) * p) * numRT;//code the function runs the diameter of the round table using inches then divided by 12 to get ft, then times pie 3.14 for sq ft. next multiply it by how many tables one has.
+      
 	return Math.round(roundTSqft); //what it returns //it returns what is defined in the function.
 }
 
-var rt = roundTCalc (droundT,numRT); //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
+var rt = roundTCalc (droundT,numRT,p); //invoking what happens after defining functions.
 
 console.log("The amount of space the round table/s will utilize is" + " " + rt  + " " + "sqft.");
+
 }
         
 else {
@@ -285,6 +306,9 @@ else {
    console.log(rt); 
 	
 }
+
+var totf = s + sb + ach + ct + bk + st + rt;
+console.log(totf);//total possible of 7 items so far
 
 
 //8. Does your living space have a dining table? 
@@ -321,6 +345,10 @@ else {
 	
 }
 
+var totg= s + sb + ach + ct + bk + st + rt + dt;
+console.log(totg);//total possible of 8 items so far
+
+
 
 //9. dining chairs or other chairs in the room
 
@@ -335,10 +363,10 @@ if (dinChQ === "y"){
 
 	var ndinChair = Number(prompt("How many chairs will you have around your dining table or in this living space?"));
 
-    var wdinChair = Number(prompt("Enter the width of one chair here." + " " + "Please measure using inches but enter the numerical value only." + " " + "For example if your chair's length is 19 inches just type in the number," + " " + "19."));
+    var wdinChair = Number(prompt("Enter the width of one chair here." + " " + "Please measure using inches but enter the numerical value only." + " " + "For example if your chair's length is 18 inches just type in the number," + " " + "18."));
     
 
-   var ldinChair = Number(prompt("Please start from the outer part of the chair and measure to it's back." + " " + "Please enter the numerical value only." + " " + "For example," + " " + "19."));
+   var ldinChair = Number(prompt("Please start from the outer part of the chair and measure to it's back." + " " + "Please enter the numerical value only." + " " + "For example," + " " + "18."));
 
    var dinChairCalc = function (wdinChair, ldinChair,ndinChair){ //defining... the width of the armchair, the length of the arm chair and how many armchairs(numchair) in the parameters/storage bins
      	
@@ -357,6 +385,9 @@ else {
    alert("You do not have any dining or other chairs in this room.");
    console.log(dch); //dinCh = dining chairs	
 }
+
+var toth= s + sb + ach + ct + bk + st + rt + dt + dch;
+console.log(toth);//total possible of 9 items so far
 
 
 
@@ -395,28 +426,27 @@ else {
    console.log(i); // item= additional item such as plants	
 }
 
+
+
 // get a total of all the items taking up floor space and see if it equal's 30% of the room's space
 
 
 alert("Now that all the items taking up space in your room have been calculated let's find out if they take approximately 30% of the room's space." + " " + "As previousy determined 30% of your room would be" + " " + total + " " +  "sqft.")
 
-var troomSqft = (s + sb + ach + ct + bk + st + rt + dt + dch + i);//code the function runs the width of the sofa /12 the length of the sofa/12. Next it multiplies the two to get the amount of space/sqft that the sofa will take up in the room. This is an estimate so all numbers should be rounded.
+var toti= s + sb + ach + ct + bk + st + rt + dt + dch + i;
+console.log(toti);//total possible of 10 items.
+
+console.log("Does" + " " + toti + " " + "equal" + " " + total + "?");
+
+alert("The amount of furnishings in this room equals" + " " + toti + "ft.");
+
+console.log("The 30% of furnishings that should be applied to this room equals" + " " + total + "ft.");
 
 
-console.log(troomSqft);
+alert("Does" + " " + toti + " " + "sqft" + " " + "equal or close to" + " " +  total +  " " + "sqft?" + " " + "If not, note the difference you may either need to add or subtract square footage." + " " + "This could mean taking away items or ordering smaller/larger furniture for the living space provided.")
 
 
-alert("The amount of furnishings in this room equals" + " " + troomSqft + "ft.");
-
-console.log("The amount or 30% of furnishings that should be applied to this room equals" + " " + total + "ft.");
-
-
-
-
-
-
-
-
+////Additional room design with the golden ratio...
 //Color  60-30-10...
 
 //60% is the main color or dominant color
