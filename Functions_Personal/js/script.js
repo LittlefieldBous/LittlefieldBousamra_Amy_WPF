@@ -252,6 +252,40 @@ else {
 }
 
 
+//7. Round accent tables
+
+var yes = "y";
+
+
+var roundTabQ = prompt("Does your living space have any round accent tables?" + " " + "This could include side tables or other accent tables." + " " + "Please enter" + " " + "y" + " " + "for Yes or" + " " + "n" + " " + "for No.");
+ console.log(roundTabQ);
+ 
+if (roundTabQ === "y"){
+
+    var numRT = Number(prompt("How many round tables will you have in your living space?"));
+
+    var droundT = Number(prompt("Enter the tables's diameter here using inches." + " " + "Please enter the numerical value only." + " " + "For example if the table's diameter is 48 inches just type in the number," + " " + "48."));
+
+   
+   var roundTCalc = function (droundT,numRT){ //defining... the width of the side table and the length of the side table. (the parameters are the storage bins.)
+     	
+   var roundTSqft = Math.round(droundT/12) * numRT;//code the function runs the width of the side table /12 the length of the side table/12. Next it multiplies the two to get the amount of space/sqft that the side table will take up in the room. if more than one table it will multiply by 2 and so on...This is an estimate so all numbers should be rounded.
+   
+	return Math.round(roundTSqft); //what it returns //it returns what is defined in the function.
+}
+
+var rT = roundTCalc (droundT,numRT); //invoking what happens after defining functions...The folded box is two inches wide  and 3 inches long on the horizontal side of the box.
+
+console.log("The amount of space the round table/s will utilize is" + " " + rT  + " " + "sqft.");
+}
+        
+else {
+   var rT  = 0; // table equals zero
+   alert("You do not have a round table in this room.");
+   console.log(rT); 
+	
+}
+
 
 
 
