@@ -1,14 +1,13 @@
 /* CSS */
 
 body{
-    background-color:#35778D;
+    background-color:#7E98E5;
 
 }
 
 h1{
 font-family: 'Verdana', sans-serif;
-font-weight:bold;
-color: #FFFFFF;
+color: #000000;
 font-size: 2em; 
 margin: 0 auto;
 text-align: center;
@@ -17,8 +16,3 @@ padding-bottom: .55555556%; /*5px/900*/
 
 }
 
-#bees {
-width: 60.45751634%; /*555/918 w555-h395*/
-float: right;
-margin-left: 1.08932462%; /*10px/918*/ 
-}
