@@ -96,7 +96,10 @@ console.log("The flapwidth of the cardstock needed to make the box is" + " " + c
 
 alert("The flapwidth of the cardstock needed to make the box is" + " " + c +  " " + "inches.");
 
+ 
+ 
  //calculate volume...
+
 
 
 
